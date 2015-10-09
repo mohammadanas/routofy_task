@@ -102,7 +102,7 @@ public class SnakeLadderGame {
 
         System.out.println("Game start");
         while (true) {
-            System.out.println("Enter player " + playerName[player] + "'s turn");
+            System.out.println("\nEnter player " + playerName[player] + "'s turn\n");
             roll = sc.nextInt();
 
             //checks error caused by wrong input
@@ -127,15 +127,15 @@ public class SnakeLadderGame {
             }
 
             if (playerPosition[player] == 100) {
-                System.out.println("Player " + playerName[player] + " won");
+                System.out.println("\nPlayer " + playerName[player] + " won\n");
                 return;
             }
 
-            System.out.println("Positions");
+            System.out.println("\nPositions");
             for (int i = 1; i <= numberOfPlayers; i++) {
                 System.out.println(playerName[i] + " -> " + playerPosition[i]);
             }
-            System.out.println("\n\n");
+            System.out.println("\n");
 
 
             //next player turn.
