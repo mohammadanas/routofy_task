@@ -152,36 +152,8 @@ public class SnakeLadderGame {
 
         gameObject.input();
 
-        /*System.out.println("Debug input");
-        System.out.println(gameObject.numberOfSnakes);
-        System.out.println(gameObject.numberOfLadders);
-        System.out.println(gameObject.numberOfPlayers);
-
-        for (int i = 0; i < gameObject.numberOfSnakes; i++) {
-            System.out.println(gameObject.snakePosition[i].start + " " + gameObject.snakePosition[i].end);
-        }
-
-        for (int i = 0; i < gameObject.numberOfLadders; i++) {
-            System.out.println(gameObject.ladderPosition[i].start + " " + gameObject.ladderPosition[i].end);
-        }
-
-        for (int i = 1; i <= gameObject.numberOfPlayers; i++) {
-            System.out.println(gameObject.playerName[i]);
-        }
-
-        System.out.println("\n\n");
-        */
-        //System.out.println("Debug init");
-
         //initializes the board for playing with snakes and ladders.
         gameObject.init();
-
-        /*System.out.println("\n\nboard\n\n");
-        for (int i = 1; i <= 100; i++) {
-            System.out.print(gameObject.board[i] + " ");
-            if (i % 10 == 0)
-                System.out.println();
-        }*/
 
         //play game
         gameObject.play();
